@@ -32,7 +32,7 @@ COMPOSE_PROFILES=grafana,telegraf docker-compose down
 ## Mapped Ports
 
 ```
-Host		Container		Service
+Host		Container   Service
 
 3003		3003        grafana
 8086		8086        influxdb
