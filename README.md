@@ -2,17 +2,13 @@
 
 :facepunch: Battle-tested
 
-[![CircleCI](https://circleci.com/gh/samuelebistoletti/docker-statsd-influxdb-grafana.svg?style=svg)](https://circleci.com/gh/samuelebistoletti/docker-statsd-influxdb-grafana)
-
 ## Versions
 
-### Warning: UPGRADE FROM OLDER VERSIONS TO VERSION 3.0.0 IS NOT POSSIBLE, SEE CHANGELOG.MD
-
 * Main version:      3.0.0
-* InfluxDB:          2.1.1
-* Telegraf (StatsD): 1.21
+* InfluxDB:          2.5.1
+* Telegraf (StatsD): 1.24.3
 * Postgres:          14.2.0
-* Grafana:           8.4.4
+* Grafana:           9.2.3
 
 
 ## Quick Start
@@ -60,7 +56,7 @@ InfluxDB data source is automatically provisioned with new Flux language support
 
 ### Web Interface
 
-Open <http://localhost:8086>
+Open <http://192.168.50.22:8086>
 
 ```
 Username: admin
