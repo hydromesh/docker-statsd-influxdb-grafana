@@ -4,11 +4,11 @@ datasources:
   - name: InfluxDB
     type: influxdb
     access: proxy
-    url: http://influxdb:8086
+    url: http://hydromesh4707.synology.me:8086
     secureJsonData:
-      token: myadmintoken
+      token: hydromeshtoken
     jsonData:
       version: Flux
-      organization: myorganization
-      defaultBucket: mybucket
+      organization: Royal Hydroponics LLC
+      defaultBucket: hydromesh_db
       tlsSkipVerify: true
