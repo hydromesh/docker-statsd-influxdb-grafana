@@ -68,9 +68,9 @@ services:
       - postgres
       - influx
     ports:
-      - 3003:3003
+      - 3000:3000
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://192.168.50.22:3003/api/health"]
+      test: ["CMD", "curl", "-f", "http://192.168.50.22:3000/api/health"]
       interval: 10s
       timeout: 10s
       retries: 5
