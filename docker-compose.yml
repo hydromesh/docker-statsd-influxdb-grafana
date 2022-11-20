@@ -20,7 +20,7 @@ services:
     ports:
       - 8086:8086
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8086/ping"]
+      test: ["CMD", "curl", "-f", "http://192.168.50.22:8086/ping"]
       interval: 10s
       timeout: 10s
       retries: 5
@@ -70,7 +70,7 @@ services:
     ports:
       - 3000:3000
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      test: ["CMD", "curl", "-f", "http://192.168.50.22:3000/api/health"]
       interval: 10s
       timeout: 10s
       retries: 5
