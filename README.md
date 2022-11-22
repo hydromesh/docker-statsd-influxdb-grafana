@@ -1,18 +1,14 @@
 # Docker service with Telegraf (StatsD), InfluxDB and Grafana
 
-:facepunch: Battle-tested
-
-[![CircleCI](https://circleci.com/gh/samuelebistoletti/docker-statsd-influxdb-grafana.svg?style=svg)](https://circleci.com/gh/samuelebistoletti/docker-statsd-influxdb-grafana)
-
 ## Versions
 
 ### Warning: UPGRADE FROM OLDER VERSIONS TO VERSION 3.0.0 IS NOT POSSIBLE, SEE CHANGELOG.MD
 
-* Main version:      3.0.0
-* InfluxDB:          2.1.1
-* Telegraf (StatsD): 1.21
+* Main version:      2.7.0
+* InfluxDB:          2.5.1
+* Telegraf (StatsD): 1.24.3
 * Postgres:          14.2.0
-* Grafana:           8.4.4
+* Grafana:           9.2.5
 
 
 ## Quick Start
@@ -38,14 +34,14 @@ COMPOSE_PROFILES=grafana,telegraf docker-compose down
 ```
 Host		Container		Service
 
-3003		3003			grafana
-8086		8086		  influxdb
-8125		8125			statsd
+3000		3000        grafana
+8086		8086        influxdb
+8125		8125        statsd
 ```
 
 ## Grafana
 
-Open <http://localhost:3003>
+Open <http://localhost:3000>
 
 ```
 Username: root
