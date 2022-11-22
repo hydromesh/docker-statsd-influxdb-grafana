@@ -4,11 +4,11 @@ datasources:
   - name: InfluxDB
     type: influxdb
     access: proxy
-    url: http://192.168.50.22:8086
+    url: http://influxdb:8086
     secureJsonData:
-      token: myadmintoken
+      token: hmadmintoken
     jsonData:
       version: Flux
-      organization: myorganization
+      organization: hmorganization
       defaultBucket: hydromeshdb
       tlsSkipVerify: true
