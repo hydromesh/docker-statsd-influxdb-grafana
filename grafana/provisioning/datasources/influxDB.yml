@@ -6,7 +6,7 @@ datasources:
     access: proxy
     url: http://influxdb:8086
     secureJsonData:
-      token: hmadmintoken
+      token: uVm0jPHEl9PEE6MQiGoxmBI758NUYG-G2xK3ocGtTZib4-s-7rr39uXeumYTyg3L5GmgA2iZjyNYR18jnxNWoA==
     jsonData:
       version: Flux
       organization: hmorganization
