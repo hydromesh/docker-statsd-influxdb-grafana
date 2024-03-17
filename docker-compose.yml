@@ -82,6 +82,6 @@ services:
     env_file:
       - ./grafana/grafana.env
     volumes:
-      - grafana_data:/var/lib/grafana
+      - $HOME/docker/grafana/data:/var/lib/grafana
       - ./grafana/provisioning:/etc/grafana/provisioning
-      - ./grafana/dashboards:/etc/dashboards
+      - $HOME/docker/grafana/dashboards:/etc/dashboards
