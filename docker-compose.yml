@@ -29,7 +29,7 @@ services:
     env_file:
       - ./influxdb/influxdb.env
     volumes:
-      - influxdb_data:/var/lib/influxdb2
+      - $HOME/docker/influxdb/data:/var/lib/influxdb2
       - ./influxdb/config.yml:/etc/influxdb2/config.yml
 
   telegraf:
